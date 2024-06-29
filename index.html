@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-To-Text</title>
+    <link rel="stylesheet" href="style.css">     
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="heding"><h1>Speech-To-Text Converter</h1></div>
+    </header>
+    <div class="hero_section">
+      <div class="Speech_to_text">
+         <div class="row_box">
+          <label>Select Language</label>
+          <div class="select_box">
+            <select name="input-language" id="language"></select>
+          </div>
+        </div>
+        <button id="convert_speech">Start Converting</button>
+        <div class="row_box">
+          <label>Result</label>
+          <textarea spellcheck="false" placeholder="Text will be shown here" disabled></textarea>
+        </div>
+        <div class="btnBox">
+          <button id="copyBtn" class="hide">Copy Text</button>
+          <button id="downloadBtn" class="hide">Download</button>
+        </div>
+        <button id="clearBtn" class="hide">Clear Text</button>
+      </div>
+    </div>
+  </div>
+  <script src="languages-option.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
